@@ -39,3 +39,7 @@ reverse DNS works to identify infrastructure was really useful.
 ## MITRE ATT&CK
 * T1566 — Phishing
 * T1583.006 - Attacker abused a free web service (Blogspot)
+
+  ### My Progress
+  <img width="1536" height="1184" alt="Margaret Fremah passes 1st SOC Phishing Analysis fromBTLO cybersecurity portfolio " src="https://github.com/user-attachments/assets/7aaa3046-3785-497b-b4f3-8aa4ac41e5ba" />
+
