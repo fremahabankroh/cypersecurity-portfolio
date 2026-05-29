@@ -1,0 +1,43 @@
+# ATT&CK — BTLO Challenge
+**Date:** 20 May 2026
+**Platform:** Blue Team Labs Online
+**Category:** Incident Response
+**Difficulty:** Easy
+**Points:** 10
+
+## What was the scenario?
+Identify threats and attacks from 5 scenarios from MITRE ATT&CK framework and how to solve them 
+
+## Tools I used
+*MITRE ATT&CK SITE 
+*OSINT
+
+## What I found
+* T1538 cloud discovery technique that doesn't use an API — turned out to be T1538 (attackers logging into Azure dashboard with stolen credentials and clicking around)
+* Identified a real APT group Blind Eagle/APT-C-36 just from a suspicious port number 4050 in a log
+* LockerGoga is a software that locks you out of your own system during a ransomware attack.
+* Pass the Hash - attacker steals your password hash and uses it without ever knowing your actual password. Had to OSINT it from old community writeups
+
+## What was tricky
+* MITRE ATT&CK framework is more of a living document and get updated so finding the 
+ technique ID was difficult for some. had to google to find the old one. Meaning i may have 
+to google sometimes. 
+
+## What I learned
+*In looking for matching IDs in the MITRE ATT&CK Frame work, there are 8 main ATT&CK Object Types and 
+the naming of the ID tend to show this:
+TA = Tactic
+T = Technique
+M = Mitigation
+G = Group
+S = Software
+C = Campaign
+* There are Sub-techniques of Techniques - more like specific 
+variations and usually have ".000" (numbers inclusive) like this T1566.001.
+
+## MITRE ATT&CK
+- T1538 — Cloud Service Dashboard
+- G0099 — APT-C-36 / Blind Eagle
+- TA0001 — Initial Access
+- S0372 — LockerGoga
+- T1550.002 — Pass the Hash
